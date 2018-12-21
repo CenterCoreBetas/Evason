@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F748E86F21CD4C0F0099805E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E86E21CD4C0F0099805E /* AppDelegate.swift */; };
+		F748E87121CD4C0F0099805E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87021CD4C0F0099805E /* GameScene.sks */; };
+		F748E87321CD4C0F0099805E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87221CD4C0F0099805E /* Actions.sks */; };
+		F748E87521CD4C0F0099805E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E87421CD4C0F0099805E /* GameScene.swift */; };
+		F748E87721CD4C0F0099805E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E87621CD4C0F0099805E /* ViewController.swift */; };
+		F748E87921CD4C110099805E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F748E87821CD4C110099805E /* Assets.xcassets */; };
+		F748E87C21CD4C110099805E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F748E87A21CD4C110099805E /* Main.storyboard */; };
+		F748E88821CD4C110099805E /* EvasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E88721CD4C110099805E /* EvasonTests.swift */; };
+		F748E89321CD4C110099805E /* EvasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E89221CD4C110099805E /* EvasonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F748E88421CD4C110099805E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F748E86321CD4C0F0099805E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F748E86A21CD4C0F0099805E;
+			remoteInfo = Evason;
+		};
+		F748E88F21CD4C110099805E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F748E86321CD4C0F0099805E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F748E86A21CD4C0F0099805E;
+			remoteInfo = Evason;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F748E86B21CD4C0F0099805E /* Evason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evason.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F748E86E21CD4C0F0099805E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F748E87021CD4C0F0099805E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		F748E87221CD4C0F0099805E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		F748E87421CD4C0F0099805E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		F748E87621CD4C0F0099805E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F748E87821CD4C110099805E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F748E87B21CD4C110099805E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F748E87D21CD4C110099805E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F748E87E21CD4C110099805E /* Evason.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Evason.entitlements; sourceTree = "<group>"; };
+		F748E88321CD4C110099805E /* EvasonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvasonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F748E88721CD4C110099805E /* EvasonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvasonTests.swift; sourceTree = "<group>"; };
+		F748E88921CD4C110099805E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F748E88E21CD4C110099805E /* EvasonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvasonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F748E89221CD4C110099805E /* EvasonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvasonUITests.swift; sourceTree = "<group>"; };
+		F748E89421CD4C110099805E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F748E86821CD4C0F0099805E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F748E88021CD4C110099805E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F748E88B21CD4C110099805E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F748E86221CD4C0F0099805E = {
+			isa = PBXGroup;
+			children = (
+				F748E86D21CD4C0F0099805E /* Evason */,
+				F748E88621CD4C110099805E /* EvasonTests */,
+				F748E89121CD4C110099805E /* EvasonUITests */,
+				F748E86C21CD4C0F0099805E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F748E86C21CD4C0F0099805E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F748E86B21CD4C0F0099805E /* Evason.app */,
+				F748E88321CD4C110099805E /* EvasonTests.xctest */,
+				F748E88E21CD4C110099805E /* EvasonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F748E86D21CD4C0F0099805E /* Evason */ = {
+			isa = PBXGroup;
+			children = (
+				F748E86E21CD4C0F0099805E /* AppDelegate.swift */,
+				F748E87021CD4C0F0099805E /* GameScene.sks */,
+				F748E87221CD4C0F0099805E /* Actions.sks */,
+				F748E87421CD4C0F0099805E /* GameScene.swift */,
+				F748E87621CD4C0F0099805E /* ViewController.swift */,
+				F748E87821CD4C110099805E /* Assets.xcassets */,
+				F748E87A21CD4C110099805E /* Main.storyboard */,
+				F748E87D21CD4C110099805E /* Info.plist */,
+				F748E87E21CD4C110099805E /* Evason.entitlements */,
+			);
+			path = Evason;
+			sourceTree = "<group>";
+		};
+		F748E88621CD4C110099805E /* EvasonTests */ = {
+			isa = PBXGroup;
+			children = (
+				F748E88721CD4C110099805E /* EvasonTests.swift */,
+				F748E88921CD4C110099805E /* Info.plist */,
+			);
+			path = EvasonTests;
+			sourceTree = "<group>";
+		};
+		F748E89121CD4C110099805E /* EvasonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F748E89221CD4C110099805E /* EvasonUITests.swift */,
+				F748E89421CD4C110099805E /* Info.plist */,
+			);
+			path = EvasonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F748E86A21CD4C0F0099805E /* Evason */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F748E89721CD4C110099805E /* Build configuration list for PBXNativeTarget "Evason" */;
+			buildPhases = (
+				F748E86721CD4C0F0099805E /* Sources */,
+				F748E86821CD4C0F0099805E /* Frameworks */,
+				F748E86921CD4C0F0099805E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Evason;
+			productName = Evason;
+			productReference = F748E86B21CD4C0F0099805E /* Evason.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F748E88221CD4C110099805E /* EvasonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F748E89A21CD4C110099805E /* Build configuration list for PBXNativeTarget "EvasonTests" */;
+			buildPhases = (
+				F748E87F21CD4C110099805E /* Sources */,
+				F748E88021CD4C110099805E /* Frameworks */,
+				F748E88121CD4C110099805E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F748E88521CD4C110099805E /* PBXTargetDependency */,
+			);
+			name = EvasonTests;
+			productName = EvasonTests;
+			productReference = F748E88321CD4C110099805E /* EvasonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F748E88D21CD4C110099805E /* EvasonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F748E89D21CD4C110099805E /* Build configuration list for PBXNativeTarget "EvasonUITests" */;
+			buildPhases = (
+				F748E88A21CD4C110099805E /* Sources */,
+				F748E88B21CD4C110099805E /* Frameworks */,
+				F748E88C21CD4C110099805E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F748E89021CD4C110099805E /* PBXTargetDependency */,
+			);
+			name = EvasonUITests;
+			productName = EvasonUITests;
+			productReference = F748E88E21CD4C110099805E /* EvasonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F748E86321CD4C0F0099805E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yashas Valmikam";
+				TargetAttributes = {
+					F748E86A21CD4C0F0099805E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F748E88221CD4C110099805E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F748E86A21CD4C0F0099805E;
+					};
+					F748E88D21CD4C110099805E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F748E86A21CD4C0F0099805E;
+					};
+				};
+			};
+			buildConfigurationList = F748E86621CD4C0F0099805E /* Build configuration list for PBXProject "Evason" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F748E86221CD4C0F0099805E;
+			productRefGroup = F748E86C21CD4C0F0099805E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F748E86A21CD4C0F0099805E /* Evason */,
+				F748E88221CD4C110099805E /* EvasonTests */,
+				F748E88D21CD4C110099805E /* EvasonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F748E86921CD4C0F0099805E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F748E87121CD4C0F0099805E /* GameScene.sks in Resources */,
+				F748E87921CD4C110099805E /* Assets.xcassets in Resources */,
+				F748E87321CD4C0F0099805E /* Actions.sks in Resources */,
+				F748E87C21CD4C110099805E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F748E88121CD4C110099805E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F748E88C21CD4C110099805E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F748E86721CD4C0F0099805E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F748E87721CD4C0F0099805E /* ViewController.swift in Sources */,
+				F748E87521CD4C0F0099805E /* GameScene.swift in Sources */,
+				F748E86F21CD4C0F0099805E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F748E87F21CD4C110099805E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F748E88821CD4C110099805E /* EvasonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F748E88A21CD4C110099805E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F748E89321CD4C110099805E /* EvasonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F748E88521CD4C110099805E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F748E86A21CD4C0F0099805E /* Evason */;
+			targetProxy = F748E88421CD4C110099805E /* PBXContainerItemProxy */;
+		};
+		F748E89021CD4C110099805E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F748E86A21CD4C0F0099805E /* Evason */;
+			targetProxy = F748E88F21CD4C110099805E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F748E87A21CD4C110099805E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F748E87B21CD4C110099805E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F748E89521CD4C110099805E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F748E89621CD4C110099805E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F748E89821CD4C110099805E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Evason/Evason.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XMRL75A2XA;
+				INFOPLIST_FILE = Evason/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.Evason;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		F748E89921CD4C110099805E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Evason/Evason.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XMRL75A2XA;
+				INFOPLIST_FILE = Evason/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.Evason;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		F748E89B21CD4C110099805E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XMRL75A2XA;
+				INFOPLIST_FILE = EvasonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.EvasonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Evason.app/Contents/MacOS/Evason";
+			};
+			name = Debug;
+		};
+		F748E89C21CD4C110099805E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XMRL75A2XA;
+				INFOPLIST_FILE = EvasonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.EvasonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Evason.app/Contents/MacOS/Evason";
+			};
+			name = Release;
+		};
+		F748E89E21CD4C110099805E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XMRL75A2XA;
+				INFOPLIST_FILE = EvasonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.EvasonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Evason;
+			};
+			name = Debug;
+		};
+		F748E89F21CD4C110099805E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XMRL75A2XA;
+				INFOPLIST_FILE = EvasonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.EvasonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = Evason;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F748E86621CD4C0F0099805E /* Build configuration list for PBXProject "Evason" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F748E89521CD4C110099805E /* Debug */,
+				F748E89621CD4C110099805E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F748E89721CD4C110099805E /* Build configuration list for PBXNativeTarget "Evason" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F748E89821CD4C110099805E /* Debug */,
+				F748E89921CD4C110099805E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F748E89A21CD4C110099805E /* Build configuration list for PBXNativeTarget "EvasonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F748E89B21CD4C110099805E /* Debug */,
+				F748E89C21CD4C110099805E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F748E89D21CD4C110099805E /* Build configuration list for PBXNativeTarget "EvasonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F748E89E21CD4C110099805E /* Debug */,
+				F748E89F21CD4C110099805E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F748E86321CD4C0F0099805E /* Project object */;
+}
