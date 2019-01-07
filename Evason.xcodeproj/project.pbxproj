@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7200D3821E2CF9100A5D496 /* shine.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F7200D3721E2CF9100A5D496 /* shine.atlas */; };
 		F748E86F21CD4C0F0099805E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E86E21CD4C0F0099805E /* AppDelegate.swift */; };
 		F748E87121CD4C0F0099805E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87021CD4C0F0099805E /* GameScene.sks */; };
 		F748E87321CD4C0F0099805E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87221CD4C0F0099805E /* Actions.sks */; };
@@ -16,6 +17,10 @@
 		F748E87C21CD4C110099805E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F748E87A21CD4C110099805E /* Main.storyboard */; };
 		F748E88821CD4C110099805E /* EvasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E88721CD4C110099805E /* EvasonTests.swift */; };
 		F748E89321CD4C110099805E /* EvasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E89221CD4C110099805E /* EvasonUITests.swift */; };
+		F75A641521E28CA8002A180F /* pink box.png in Resources */ = {isa = PBXBuildFile; fileRef = F75A641421E28CA8002A180F /* pink box.png */; };
+		F75A641721E29239002A180F /* EVASON BETA.png in Resources */ = {isa = PBXBuildFile; fileRef = F75A641621E29239002A180F /* EVASON BETA.png */; };
+		F75A642421E2B7DD002A180F /* human.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F75A642321E2B7DD002A180F /* human.atlas */; };
+		F75A642621E2B96A002A180F /* humanflip.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F75A642521E2B96A002A180F /* humanflip.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F7200D3721E2CF9100A5D496 /* shine.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = shine.atlas; sourceTree = SOURCE_ROOT; };
 		F748E86B21CD4C0F0099805E /* Evason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F748E86E21CD4C0F0099805E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F748E87021CD4C0F0099805E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -52,6 +58,10 @@
 		F748E88E21CD4C110099805E /* EvasonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvasonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F748E89221CD4C110099805E /* EvasonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvasonUITests.swift; sourceTree = "<group>"; };
 		F748E89421CD4C110099805E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75A641421E28CA8002A180F /* pink box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pink box.png"; path = "../../../pink box.png"; sourceTree = "<group>"; };
+		F75A641621E29239002A180F /* EVASON BETA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "EVASON BETA.png"; path = "../../../EVASON BETA.png"; sourceTree = "<group>"; };
+		F75A642321E2B7DD002A180F /* human.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = human.atlas; sourceTree = SOURCE_ROOT; };
+		F75A642521E2B96A002A180F /* humanflip.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = humanflip.atlas; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +112,17 @@
 		F748E86D21CD4C0F0099805E /* Evason */ = {
 			isa = PBXGroup;
 			children = (
+				F7200D3721E2CF9100A5D496 /* shine.atlas */,
+				F75A642521E2B96A002A180F /* humanflip.atlas */,
+				F75A642321E2B7DD002A180F /* human.atlas */,
 				F748E86E21CD4C0F0099805E /* AppDelegate.swift */,
 				F748E87021CD4C0F0099805E /* GameScene.sks */,
 				F748E87221CD4C0F0099805E /* Actions.sks */,
 				F748E87421CD4C0F0099805E /* GameScene.swift */,
 				F748E87621CD4C0F0099805E /* ViewController.swift */,
 				F748E87821CD4C110099805E /* Assets.xcassets */,
+				F75A641421E28CA8002A180F /* pink box.png */,
+				F75A641621E29239002A180F /* EVASON BETA.png */,
 				F748E87A21CD4C110099805E /* Main.storyboard */,
 				F748E87D21CD4C110099805E /* Info.plist */,
 				F748E87E21CD4C110099805E /* Evason.entitlements */,
@@ -197,7 +212,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Yashas Valmikam";
+				ORGANIZATIONNAME = "(sample developer)";
 				TargetAttributes = {
 					F748E86A21CD4C0F0099805E = {
 						CreatedOnToolsVersion = 10.1;
@@ -213,7 +228,7 @@
 				};
 			};
 			buildConfigurationList = F748E86621CD4C0F0099805E /* Build configuration list for PBXProject "Evason" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -238,9 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F748E87121CD4C0F0099805E /* GameScene.sks in Resources */,
+				F7200D3821E2CF9100A5D496 /* shine.atlas in Resources */,
+				F75A642621E2B96A002A180F /* humanflip.atlas in Resources */,
+				F75A641521E28CA8002A180F /* pink box.png in Resources */,
 				F748E87921CD4C110099805E /* Assets.xcassets in Resources */,
+				F75A642421E2B7DD002A180F /* human.atlas in Resources */,
 				F748E87321CD4C0F0099805E /* Actions.sks in Resources */,
 				F748E87C21CD4C110099805E /* Main.storyboard in Resources */,
+				F75A641721E29239002A180F /* EVASON BETA.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Evason/Evason.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XMRL75A2XA;
@@ -442,8 +463,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.Evason;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -453,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Evason/Evason.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XMRL75A2XA;
@@ -461,8 +485,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = com.centercore.Evason;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

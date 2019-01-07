@@ -9,12 +9,64 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    var cam: SKCameraNode?
     
+    var holdingRight = false
+    var holdingLeft = false
+    var holdingUp = false
+    var holdingDown = false
+    var run = false
+    
+    private var humanWalkingFramesForward: [SKTexture] = []
+    private var humanWalkingFramesBackward: [SKTexture] = []
+    private var yellowSquareBoxFrames: [SKTexture] = []
+    
+    func buildHuman(name:String) -> [SKTexture] {
+        let humanAnimatedAtlas = SKTextureAtlas(named: name)
+        var walkFrames: [SKTexture] = []
+        
+        let numImages = humanAnimatedAtlas.textureNames.count
+        for i in 1...numImages {
+            let textureName = "\(name)_\(i)"
+            walkFrames.append(humanAnimatedAtlas.textureNamed(textureName))
+        }
+        return walkFrames
+    }
+    
+    var increaseLevel = false
+    
+    func collisionBetween(object1: SKNode, object2: SKNode) {
+        if(object1.name == "Brick" || object2.name == "Brick") {
+            print("Brick collided with Goal")
+            if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
+                increaseLevel = true
+            }
+        }
+    }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        collisionBetween(object1: contact.bodyA.node!, object2: contact.bodyB.node!)
+    }
+
     override func didMove(to view: SKView) {
+        // For detecting collisions
+        self.physicsWorld.contactDelegate = self
+        
+        if let shine = self.childNode(withName: "//Shine") as? SKSpriteNode {
+            shine.position = CGPoint(x:317 ,y:840)
+        }
+        if let goal0 = self.childNode(withName: "//Goal1") as? SKSpriteNode {
+            goal0.position = CGPoint(x:317 ,y:1119)
+        }
+       
+        super.didMove(to: view)
+        cam = SKCameraNode()
+        self.camera = cam
+        self.addChild(cam!)
         
         // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
@@ -29,37 +81,51 @@ class GameScene: SKScene {
         
         if let spinnyNode = self.spinnyNode {
             spinnyNode.lineWidth = 2.5
-            
             spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
             spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
         }
+        
+        //humanWalkingFramesForward = self.buildHuman(name:"human")
+        //humanWalkingFramesBackward = self.buildHuman(name:"humanflip")
+        humanWalkingFramesForward = self.buildHuman(name:"human")
+        humanWalkingFramesBackward = self.buildHuman(name:"humanflip")
+        yellowSquareBoxFrames = self.buildHuman(name:"shine")
+        
+        if let shineNode = self.childNode(withName: "//Shine") as? SKSpriteNode {
+            shineNode.run(SKAction.repeatForever(
+                SKAction.animate(with: yellowSquareBoxFrames,
+                                 timePerFrame: 0.1,
+                                 resize: false,
+                                 restore: true)),
+                          withKey:"shinePattern")
+        }
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
+        /*if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.green
             self.addChild(n)
-        }
+        }*/
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
+        /*if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.blue
             self.addChild(n)
-        }
+        }*/
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
+        /*if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
             n.strokeColor = SKColor.red
             self.addChild(n)
-        }
+        }*/
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -76,17 +142,122 @@ class GameScene: SKScene {
     
     override func keyDown(with event: NSEvent) {
         switch event.keyCode {
-        case 0x31:
-            if let label = self.label {
-                label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-            }
-        default:
-            print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
+            case 0x31:
+                if let label = self.label {
+                    holdingUp = true
+                    label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
+ 
+                }
+            case 124:
+                holdingRight = true
+            case 123:
+                holdingLeft = true
+            case 126:
+                holdingUp = true
+            case 9:
+                run = true
+            case 125:
+                holdingDown = true
+            case 15: // reset
+                if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
+                    brickNode.position = CGPoint(x:0 ,y:0)
+                }
+            default:
+                print("UNHANDLED keyDown: \(event.characters!) keyCode: \(event.keyCode)")
         }
     }
     
+    override func keyUp(with event: NSEvent) {
+        switch event.keyCode {
+            case 124:
+                holdingRight = false
+            case 123:
+                holdingLeft = false
+            case 126:
+                holdingUp = false
+            case 125:
+                holdingDown = false
+            case 9:
+                run = false
+            default:
+                Void()
+        }
+    }
+    
+    enum WalkDirection {
+        case None, Forward, Reverse
+    }
+    var walkDirection = WalkDirection.None
+    
+    func animateHumanStart(direction:WalkDirection) {
+        if (walkDirection == direction) {
+            // it's currently animating in the same direction, leave it alone
+            return
+        }
+        
+        self.walkDirection = direction
+        
+        let walkFrames: [SKTexture] = (direction == WalkDirection.Forward) ? humanWalkingFramesForward : humanWalkingFramesBackward
+        
+        if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
+            self.animateHumanStop()
+            brickNode.run(SKAction.repeatForever(
+                SKAction.animate(with:  walkFrames,
+                                 timePerFrame: 0.1,
+                                 resize: false,
+                                 restore: true)),
+                     withKey:"walkingInPlaceHuman")
+        }
+    }
+    
+    func animateHumanStop() {
+        if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
+            brickNode.removeAction(forKey:"walkingInPlaceHuman")
+        }
+    }
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        
+        let movement:CGFloat = 5.0;
+        var movementw:CGFloat = 5.0;
+        
+        if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
+            super.update(currentTime)
+            
+            if (self.increaseLevel) {
+                print("Setting new position")
+                brickNode.position = CGPoint(x:1219 ,y:966)
+                self.increaseLevel = false
+            }
+            
+            camera?.position = brickNode.position
+            if run == true {
+                movementw = movementw + 5
+            }
+            
+            if (!(holdingLeft || holdingRight)) {
+                if(self.walkDirection != WalkDirection.None) {
+                    self.animateHumanStop()
+                }
+            }
+
+            if holdingRight == true {
+                self.animateHumanStart(direction:WalkDirection.Forward)
+                brickNode.texture = SKTexture(imageNamed: "human_1")
+                brickNode.run(SKAction.moveBy(x: movementw, y: 0, duration: 0.01))
+            }
+            if holdingLeft == true {
+                self.animateHumanStart(direction:WalkDirection.Reverse)
+                brickNode.texture = SKTexture(imageNamed: "humanflip_1")
+                brickNode.run(SKAction.moveBy(x: -movementw, y: 0, duration: 0.01))
+            }
+            if holdingDown == true {
+                brickNode.run(SKAction.moveBy(x: 0, y: -movement, duration: 0.01))
+            }            
+            if holdingUp == true {
+                brickNode.run(SKAction.moveBy(x: 0, y: movement + 8, duration: 0.01))
+            }
+        }
     }
 }
