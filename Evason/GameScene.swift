@@ -20,6 +20,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var holdingUp = false
     var holdingDown = false
     var run = false
+    var level = 0
     
     private var humanWalkingFramesForward: [SKTexture] = []
     private var humanWalkingFramesBackward: [SKTexture] = []
@@ -42,6 +43,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func collisionBetween(object1: SKNode, object2: SKNode) {
         if(object1.name == "Brick" || object2.name == "Brick") {
             print("Brick collided with Goal")
+            level = level + 1
             if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
                 increaseLevel = true
             }
@@ -160,7 +162,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 holdingDown = true
             case 15: // reset
                 if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
-                    brickNode.position = CGPoint(x:0 ,y:0)
+                    brickNode.position = CGPoint(x:0 ,y:100)
                 }
             default:
                 print("UNHANDLED keyDown: \(event.characters!) keyCode: \(event.keyCode)")
@@ -226,8 +228,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             super.update(currentTime)
             
             if (self.increaseLevel) {
+                print(level)
+                if level == 1 {
                 print("Setting new position")
                 brickNode.position = CGPoint(x:1219 ,y:966)
+                }
+                if level == 2 {
+                    print("Setting new position")
+                    brickNode.position = CGPoint(x:1219 ,y:966)
+                }
                 self.increaseLevel = false
             }
             
