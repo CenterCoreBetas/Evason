@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F711DD2B21E6FD6800A6C1B2 /* TitleMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */; };
 		F7200D3821E2CF9100A5D496 /* shine.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F7200D3721E2CF9100A5D496 /* shine.atlas */; };
 		F748E86F21CD4C0F0099805E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E86E21CD4C0F0099805E /* AppDelegate.swift */; };
 		F748E87121CD4C0F0099805E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87021CD4C0F0099805E /* GameScene.sks */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleMenu.sks; sourceTree = "<group>"; };
 		F7200D3721E2CF9100A5D496 /* shine.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = shine.atlas; sourceTree = SOURCE_ROOT; };
 		F748E86B21CD4C0F0099805E /* Evason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F748E86E21CD4C0F0099805E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		F748E86221CD4C0F0099805E = {
 			isa = PBXGroup;
 			children = (
+				F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */,
 				F748E86D21CD4C0F0099805E /* Evason */,
 				F748E88621CD4C110099805E /* EvasonTests */,
 				F748E89121CD4C110099805E /* EvasonUITests */,
@@ -261,6 +264,7 @@
 				F748E87321CD4C0F0099805E /* Actions.sks in Resources */,
 				F748E87C21CD4C110099805E /* Main.storyboard in Resources */,
 				F75A641721E29239002A180F /* EVASON BETA.png in Resources */,
+				F711DD2B21E6FD6800A6C1B2 /* TitleMenu.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

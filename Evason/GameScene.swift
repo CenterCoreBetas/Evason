@@ -21,6 +21,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var holdingDown = false
     var run = false
     var level = 0
+    var facingLeft = false
+    var moving = false
+    var alwaysfalse = false
+    var vframe = 0
     
     private var humanWalkingFramesForward: [SKTexture] = []
     private var humanWalkingFramesBackward: [SKTexture] = []
@@ -55,6 +59,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     override func didMove(to view: SKView) {
+        
+        
         // For detecting collisions
         self.physicsWorld.contactDelegate = self
         
@@ -69,6 +75,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         cam = SKCameraNode()
         self.camera = cam
         self.addChild(cam!)
+        
+        let zoomInAction = SKAction.scale(to:1.6, duration: 1)
+        self.camera?.run(zoomInAction)
         
         // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
@@ -112,6 +121,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             n.strokeColor = SKColor.green
             self.addChild(n)
         }*/
+        if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
+            brickNode.position = pos
+        }
     }
     
     func touchMoved(toPoint pos : CGPoint) {
@@ -173,14 +185,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         switch event.keyCode {
             case 124:
                 holdingRight = false
+            moving = false
             case 123:
                 holdingLeft = false
+            moving = false
             case 126:
                 holdingUp = false
+            moving = false
             case 125:
                 holdingDown = false
+            moving = false
             case 9:
                 run = false
+            moving = false
             default:
                 Void()
         }
@@ -220,6 +237,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        vframe = vframe + 1
+        print("frame", vframe)
         
         let movement:CGFloat = 5.0;
         var movementw:CGFloat = 5.0;
@@ -232,10 +251,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 if level == 1 {
                 print("Setting new position")
                 brickNode.position = CGPoint(x:1219 ,y:966)
+                    if let goal0 = self.childNode(withName: "//Goal1") as? SKSpriteNode {
+                        goal0.position = CGPoint(x:3471 ,y:1265)
+                    }
                 }
                 if level == 2 {
                     print("Setting new position")
-                    brickNode.position = CGPoint(x:1219 ,y:966)
+                    brickNode.position = CGPoint(x:4857 ,y:1211)
+                    if let goal0 = self.childNode(withName: "//Goal1") as? SKSpriteNode {
+                        goal0.position = CGPoint(x:4701 ,y:1440)
+                    }
                 }
                 self.increaseLevel = false
             }
@@ -248,25 +273,33 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             if (!(holdingLeft || holdingRight)) {
                 if(self.walkDirection != WalkDirection.None) {
                     self.animateHumanStop()
+                    self.walkDirection = WalkDirection.None
                 }
             }
 
             if holdingRight == true {
+                moving = true
+                facingLeft = false
                 self.animateHumanStart(direction:WalkDirection.Forward)
                 brickNode.texture = SKTexture(imageNamed: "human_1")
                 brickNode.run(SKAction.moveBy(x: movementw, y: 0, duration: 0.01))
             }
             if holdingLeft == true {
+                moving = true
+                facingLeft = true
                 self.animateHumanStart(direction:WalkDirection.Reverse)
                 brickNode.texture = SKTexture(imageNamed: "humanflip_1")
                 brickNode.run(SKAction.moveBy(x: -movementw, y: 0, duration: 0.01))
             }
             if holdingDown == true {
                 brickNode.run(SKAction.moveBy(x: 0, y: -movement, duration: 0.01))
+                moving = true
             }            
             if holdingUp == true {
                 brickNode.run(SKAction.moveBy(x: 0, y: movement + 8, duration: 0.01))
+                moving = true
             }
         }
     }
 }
+
