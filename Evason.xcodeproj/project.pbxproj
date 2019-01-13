@@ -13,7 +13,7 @@
 		F748E87121CD4C0F0099805E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87021CD4C0F0099805E /* GameScene.sks */; };
 		F748E87321CD4C0F0099805E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87221CD4C0F0099805E /* Actions.sks */; };
 		F748E87521CD4C0F0099805E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E87421CD4C0F0099805E /* GameScene.swift */; };
-		F748E87721CD4C0F0099805E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E87621CD4C0F0099805E /* ViewController.swift */; };
+		F748E87721CD4C0F0099805E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E87621CD4C0F0099805E /* GameViewController.swift */; };
 		F748E87921CD4C110099805E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F748E87821CD4C110099805E /* Assets.xcassets */; };
 		F748E87C21CD4C110099805E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F748E87A21CD4C110099805E /* Main.storyboard */; };
 		F748E88821CD4C110099805E /* EvasonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E88721CD4C110099805E /* EvasonTests.swift */; };
@@ -22,6 +22,8 @@
 		F75A641721E29239002A180F /* EVASON BETA.png in Resources */ = {isa = PBXBuildFile; fileRef = F75A641621E29239002A180F /* EVASON BETA.png */; };
 		F75A642421E2B7DD002A180F /* human.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F75A642321E2B7DD002A180F /* human.atlas */; };
 		F75A642621E2B96A002A180F /* humanflip.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F75A642521E2B96A002A180F /* humanflip.atlas */; };
+		F7CA84BA21EA65E000A166DD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA84B921EA65E000A166DD /* SplashViewController.swift */; };
+		F7CA84BC21EA67BF00A166DD /* TitleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,7 @@
 		F748E87021CD4C0F0099805E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		F748E87221CD4C0F0099805E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		F748E87421CD4C0F0099805E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		F748E87621CD4C0F0099805E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F748E87621CD4C0F0099805E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F748E87821CD4C110099805E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F748E87B21CD4C110099805E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F748E87D21CD4C110099805E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 		F75A641621E29239002A180F /* EVASON BETA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "EVASON BETA.png"; path = "../../../EVASON BETA.png"; sourceTree = "<group>"; };
 		F75A642321E2B7DD002A180F /* human.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = human.atlas; sourceTree = SOURCE_ROOT; };
 		F75A642521E2B96A002A180F /* humanflip.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = humanflip.atlas; sourceTree = SOURCE_ROOT; };
+		F7CA84B921EA65E000A166DD /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +98,6 @@
 		F748E86221CD4C0F0099805E = {
 			isa = PBXGroup;
 			children = (
-				F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */,
 				F748E86D21CD4C0F0099805E /* Evason */,
 				F748E88621CD4C110099805E /* EvasonTests */,
 				F748E89121CD4C110099805E /* EvasonUITests */,
@@ -115,20 +118,23 @@
 		F748E86D21CD4C0F0099805E /* Evason */ = {
 			isa = PBXGroup;
 			children = (
-				F7200D3721E2CF9100A5D496 /* shine.atlas */,
-				F75A642521E2B96A002A180F /* humanflip.atlas */,
-				F75A642321E2B7DD002A180F /* human.atlas */,
-				F748E86E21CD4C0F0099805E /* AppDelegate.swift */,
-				F748E87021CD4C0F0099805E /* GameScene.sks */,
 				F748E87221CD4C0F0099805E /* Actions.sks */,
-				F748E87421CD4C0F0099805E /* GameScene.swift */,
-				F748E87621CD4C0F0099805E /* ViewController.swift */,
+				F748E86E21CD4C0F0099805E /* AppDelegate.swift */,
 				F748E87821CD4C110099805E /* Assets.xcassets */,
-				F75A641421E28CA8002A180F /* pink box.png */,
 				F75A641621E29239002A180F /* EVASON BETA.png */,
-				F748E87A21CD4C110099805E /* Main.storyboard */,
-				F748E87D21CD4C110099805E /* Info.plist */,
 				F748E87E21CD4C110099805E /* Evason.entitlements */,
+				F748E87021CD4C0F0099805E /* GameScene.sks */,
+				F748E87421CD4C0F0099805E /* GameScene.swift */,
+				F75A642321E2B7DD002A180F /* human.atlas */,
+				F75A642521E2B96A002A180F /* humanflip.atlas */,
+				F748E87D21CD4C110099805E /* Info.plist */,
+				F748E87A21CD4C110099805E /* Main.storyboard */,
+				F75A641421E28CA8002A180F /* pink box.png */,
+				F7200D3721E2CF9100A5D496 /* shine.atlas */,
+				F7CA84B921EA65E000A166DD /* SplashViewController.swift */,
+				F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */,
+				F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */,
+				F748E87621CD4C0F0099805E /* GameViewController.swift */,
 			);
 			path = Evason;
 			sourceTree = "<group>";
@@ -289,9 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F748E87721CD4C0F0099805E /* ViewController.swift in Sources */,
+				F748E87721CD4C0F0099805E /* GameViewController.swift in Sources */,
 				F748E87521CD4C0F0099805E /* GameScene.swift in Sources */,
 				F748E86F21CD4C0F0099805E /* AppDelegate.swift in Sources */,
+				F7CA84BA21EA65E000A166DD /* SplashViewController.swift in Sources */,
+				F7CA84BC21EA67BF00A166DD /* TitleMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

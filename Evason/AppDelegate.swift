@@ -22,5 +22,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Some change here. Just for testing.
     }
     
-    
 }

@@ -237,8 +237,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
-        vframe = vframe + 1
-        print("frame", vframe)
+        //vframe = vframe + 1
+        //print("frame", vframe)
         
         let movement:CGFloat = 5.0;
         var movementw:CGFloat = 5.0;
@@ -250,16 +250,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 print(level)
                 if level == 1 {
                 print("Setting new position")
-                brickNode.position = CGPoint(x:1219 ,y:966)
+                brickNode.position = CGPoint(x:1840 ,y:1191)
                     if let goal0 = self.childNode(withName: "//Goal1") as? SKSpriteNode {
                         goal0.position = CGPoint(x:3471 ,y:1265)
+                    }
+                    if let shine = self.childNode(withName: "//Shine") as? SKSpriteNode {
+                        shine.position = CGPoint(x:317 ,y:840)
                     }
                 }
                 if level == 2 {
                     print("Setting new position")
                     brickNode.position = CGPoint(x:4857 ,y:1211)
                     if let goal0 = self.childNode(withName: "//Goal1") as? SKSpriteNode {
-                        goal0.position = CGPoint(x:4701 ,y:1440)
+                        goal0.position = CGPoint(x:4701 ,y:1578)
+                    }
+                    if let shine = self.childNode(withName: "//Shine") as? SKSpriteNode {
+                        shine.position = CGPoint(x:317 ,y:840)
                     }
                 }
                 self.increaseLevel = false

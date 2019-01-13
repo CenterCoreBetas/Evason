@@ -10,7 +10,7 @@ import Cocoa
 import SpriteKit
 import GameplayKit
 
-class ViewController: NSViewController {
+class GameViewController: NSViewController {
 
     @IBOutlet var skView: SKView!
     
