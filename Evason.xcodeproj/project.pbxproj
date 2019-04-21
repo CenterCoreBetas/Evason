@@ -20,7 +20,6 @@
 		F748E89321CD4C110099805E /* EvasonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E89221CD4C110099805E /* EvasonUITests.swift */; };
 		F75A641521E28CA8002A180F /* pink box.png in Resources */ = {isa = PBXBuildFile; fileRef = F75A641421E28CA8002A180F /* pink box.png */; };
 		F75A641721E29239002A180F /* EVASON BETA.png in Resources */ = {isa = PBXBuildFile; fileRef = F75A641621E29239002A180F /* EVASON BETA.png */; };
-		F75A642421E2B7DD002A180F /* human.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F75A642321E2B7DD002A180F /* human.atlas */; };
 		F75A642621E2B96A002A180F /* humanflip.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F75A642521E2B96A002A180F /* humanflip.atlas */; };
 		F7A59A59226C43DB0084B085 /* evason-1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A58226C43DB0084B085 /* evason-1.png */; };
 		F7A59A5A226C43DB0084B085 /* evason-1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A58226C43DB0084B085 /* evason-1.png */; };
@@ -64,6 +63,9 @@
 		F7A59A8F226C486F0084B085 /* humanflip_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A6D226C486F0084B085 /* humanflip_1.png */; };
 		F7A59A90226C486F0084B085 /* humanflip_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A6D226C486F0084B085 /* humanflip_1.png */; };
 		F7A59A91226C486F0084B085 /* humanflip_1.png in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A6D226C486F0084B085 /* humanflip_1.png */; };
+		F7A59A93226C48F20084B085 /* human.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A92226C48F20084B085 /* human.atlas */; };
+		F7A59A94226C48F20084B085 /* human.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A92226C48F20084B085 /* human.atlas */; };
+		F7A59A95226C48F20084B085 /* human.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A92226C48F20084B085 /* human.atlas */; };
 		F7CA84BA21EA65E000A166DD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA84B921EA65E000A166DD /* SplashViewController.swift */; };
 		F7CA84BC21EA67BF00A166DD /* TitleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */; };
 /* End PBXBuildFile section */
@@ -106,7 +108,6 @@
 		F748E89421CD4C110099805E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F75A641421E28CA8002A180F /* pink box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pink box.png"; path = "../../../pink box.png"; sourceTree = "<group>"; };
 		F75A641621E29239002A180F /* EVASON BETA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "EVASON BETA.png"; path = "../../../EVASON BETA.png"; sourceTree = "<group>"; };
-		F75A642321E2B7DD002A180F /* human.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = human.atlas; sourceTree = SOURCE_ROOT; };
 		F75A642521E2B96A002A180F /* humanflip.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = humanflip.atlas; sourceTree = SOURCE_ROOT; };
 		F7A59A58226C43DB0084B085 /* evason-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evason-1.png"; sourceTree = "<group>"; };
 		F7A59A5C226C44E70084B085 /* 8x8-evason-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8x8-evason-font.ttf"; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		F7A59A6B226C486F0084B085 /* humanflip_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanflip_3.png; sourceTree = "<group>"; };
 		F7A59A6C226C486F0084B085 /* humanflip_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanflip_2.png; sourceTree = "<group>"; };
 		F7A59A6D226C486F0084B085 /* humanflip_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = humanflip_1.png; sourceTree = "<group>"; };
+		F7A59A92226C48F20084B085 /* human.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = human.atlas; sourceTree = SOURCE_ROOT; };
 		F7CA84B921EA65E000A166DD /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -184,8 +186,8 @@
 				F7A59A67226C486F0084B085 /* humanflipold */,
 				F7A59A60226C486F0084B085 /* humanold */,
 				F748E87021CD4C0F0099805E /* GameScene.sks */,
+				F7A59A92226C48F20084B085 /* human.atlas */,
 				F748E87421CD4C0F0099805E /* GameScene.swift */,
-				F75A642321E2B7DD002A180F /* human.atlas */,
 				F75A642521E2B96A002A180F /* humanflip.atlas */,
 				F748E87D21CD4C110099805E /* Info.plist */,
 				F748E87A21CD4C110099805E /* Main.storyboard */,
@@ -359,7 +361,6 @@
 				F7A59A8C226C486F0084B085 /* humanflip_2.png in Resources */,
 				F7A59A74226C486F0084B085 /* human_6.png in Resources */,
 				F7A59A86226C486F0084B085 /* humanflip_6.png in Resources */,
-				F75A642421E2B7DD002A180F /* human.atlas in Resources */,
 				F748E87321CD4C0F0099805E /* Actions.sks in Resources */,
 				F7A59A6E226C486F0084B085 /* human_4.png in Resources */,
 				F7A59A89226C486F0084B085 /* humanflip_3.png in Resources */,
@@ -371,6 +372,7 @@
 				F711DD2B21E6FD6800A6C1B2 /* TitleMenu.sks in Resources */,
 				F7A59A8F226C486F0084B085 /* humanflip_1.png in Resources */,
 				F7A59A7D226C486F0084B085 /* human_1.png in Resources */,
+				F7A59A93226C48F20084B085 /* human.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +388,7 @@
 				F7A59A87226C486F0084B085 /* humanflip_6.png in Resources */,
 				F7A59A8A226C486F0084B085 /* humanflip_3.png in Resources */,
 				F7A59A6F226C486F0084B085 /* human_4.png in Resources */,
+				F7A59A94226C48F20084B085 /* human.atlas in Resources */,
 				F7A59A75226C486F0084B085 /* human_6.png in Resources */,
 				F7A59A72226C486F0084B085 /* human_5.png in Resources */,
 				F7A59A7B226C486F0084B085 /* human_3.png in Resources */,
@@ -407,6 +410,7 @@
 				F7A59A88226C486F0084B085 /* humanflip_6.png in Resources */,
 				F7A59A8B226C486F0084B085 /* humanflip_3.png in Resources */,
 				F7A59A70226C486F0084B085 /* human_4.png in Resources */,
+				F7A59A95226C48F20084B085 /* human.atlas in Resources */,
 				F7A59A76226C486F0084B085 /* human_6.png in Resources */,
 				F7A59A73226C486F0084B085 /* human_5.png in Resources */,
 				F7A59A7C226C486F0084B085 /* human_3.png in Resources */,
