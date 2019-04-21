@@ -242,6 +242,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         let movement:CGFloat = 5.0;
         var movementw:CGFloat = 5.0;
+        var movementu:CGFloat = 5.0;
         
         if let brickNode = self.childNode(withName: "//Brick") as? SKSpriteNode {
             super.update(currentTime)
@@ -265,7 +266,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                         goal0.position = CGPoint(x:4701 ,y:1578)
                     }
                     if let shine = self.childNode(withName: "//Shine") as? SKSpriteNode {
-                        shine.position = CGPoint(x:317 ,y:840)
+                        shine.position = CGPoint(x:4682 ,y:1477)
                     }
                 }
                 self.increaseLevel = false
@@ -274,6 +275,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             camera?.position = brickNode.position
             if run == true {
                 movementw = movementw + 5
+                movementu = movementu + 2.5
             }
             
             if (!(holdingLeft || holdingRight)) {
@@ -302,7 +304,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 moving = true
             }            
             if holdingUp == true {
-                brickNode.run(SKAction.moveBy(x: 0, y: movement + 8, duration: 0.01))
+                brickNode.run(SKAction.moveBy(x: 0, y: movementu + 8, duration: 0.01))
                 moving = true
             }
         }
