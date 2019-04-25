@@ -15,6 +15,7 @@ class TitleMenu: SKScene, SKPhysicsContactDelegate {
     }
     
     // Replaces the viewcontroller in the main window
+    
     func gotoGameViewController() {
         
         let storyBoard = NSStoryboard(name: "Main", bundle: nil)
@@ -24,6 +25,19 @@ class TitleMenu: SKScene, SKPhysicsContactDelegate {
         if let window = NSApplication.shared.windows.first {
             // you can now modify window attributes
             window.contentViewController = viewController
+            
+        }
+        
+    }
+    func gotooptioncontroller() {
+        
+        let storyBoard = NSStoryboard(name: "Main", bundle: nil)
+        let optionController = storyBoard.instantiateController(withIdentifier: "OptionController") as! OptionController
+        
+        
+        if let window = NSApplication.shared.windows.first {
+            // you can now modify window attributes
+            window.contentViewController = optionController
             
         }
         
@@ -38,6 +52,9 @@ class TitleMenu: SKScene, SKPhysicsContactDelegate {
         let node = self.atPoint(pos)
         if (node.name == "LaunchButton") {
             self.gotoGameViewController()
+        }
+        if (node.name == "OptionButton") {
+            self.gotooptioncontroller()
         }
     }
     

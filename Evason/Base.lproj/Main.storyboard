@@ -47,8 +47,7 @@
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Evade the Son" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="0.0" y="107" width="1440" height="1000"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
@@ -82,7 +81,7 @@
         <!--SplashViewController-->
         <scene sceneID="Rpn-hX-x6e">
             <objects>
-                <viewController title="SplashViewController" id="Why-gr-0Ud" customClass="SplashViewController" customModule="Evason" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SplashViewController" storyboardIdentifier="SplashController" id="Why-gr-0Ud" customClass="SplashViewController" customModule="Evason" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="hbC-0Y-V8d" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="1440" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,6 +93,34 @@
                 <customObject id="7G3-7z-BKe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416" y="1080"/>
+        </scene>
+        <!--Option Controller-->
+        <scene sceneID="99u-Jt-LsF">
+            <objects>
+                <viewController storyboardIdentifier="OptionController" id="nIx-Y6-Hm6" customClass="OptionController" customModule="Evason" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="pWS-Fb-fRv" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ygh-Zw-snd">
+                                <rect key="frame" x="20" y="252" width="63" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Rvf-Uh-TxG">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didClickExitWithSender:" target="nIx-Y6-Hm6" id="QVy-3B-ON6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="skView" destination="pWS-Fb-fRv" id="thX-04-0fM"/>
+                    </connections>
+                </viewController>
+                <customObject id="Jar-eo-MtA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

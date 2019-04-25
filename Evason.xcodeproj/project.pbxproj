@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		F711DD2B21E6FD6800A6C1B2 /* TitleMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */; };
 		F7200D3821E2CF9100A5D496 /* shine.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F7200D3721E2CF9100A5D496 /* shine.atlas */; };
+		F73CF38D226EBD08004D6192 /* exason-64.png in Resources */ = {isa = PBXBuildFile; fileRef = F73CF38C226EBD08004D6192 /* exason-64.png */; };
+		F73CF38E226EBD08004D6192 /* exason-64.png in Resources */ = {isa = PBXBuildFile; fileRef = F73CF38C226EBD08004D6192 /* exason-64.png */; };
+		F73CF38F226EBD08004D6192 /* exason-64.png in Resources */ = {isa = PBXBuildFile; fileRef = F73CF38C226EBD08004D6192 /* exason-64.png */; };
+		F73CF3912270038F004D6192 /* Tutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = F73CF3902270038F004D6192 /* Tutorial.sks */; };
+		F73CF3922270038F004D6192 /* Tutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = F73CF3902270038F004D6192 /* Tutorial.sks */; };
+		F73CF3932270038F004D6192 /* Tutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = F73CF3902270038F004D6192 /* Tutorial.sks */; };
+		F73CF3952270050A004D6192 /* TileCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = F73CF3942270050A004D6192 /* TileCenter.png */; };
+		F73CF3962270050A004D6192 /* TileCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = F73CF3942270050A004D6192 /* TileCenter.png */; };
+		F73CF3972270050A004D6192 /* TileCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = F73CF3942270050A004D6192 /* TileCenter.png */; };
 		F748E86F21CD4C0F0099805E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F748E86E21CD4C0F0099805E /* AppDelegate.swift */; };
 		F748E87121CD4C0F0099805E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87021CD4C0F0099805E /* GameScene.sks */; };
 		F748E87321CD4C0F0099805E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F748E87221CD4C0F0099805E /* Actions.sks */; };
@@ -68,6 +77,27 @@
 		F7A59A95226C48F20084B085 /* human.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F7A59A92226C48F20084B085 /* human.atlas */; };
 		F7CA84BA21EA65E000A166DD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA84B921EA65E000A166DD /* SplashViewController.swift */; };
 		F7CA84BC21EA67BF00A166DD /* TitleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */; };
+		F7CBA0A0226CFF8100E378DD /* 7x6-misc-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA09F226CFF8100E378DD /* 7x6-misc-font.ttf */; };
+		F7CBA0A1226CFF8100E378DD /* 7x6-misc-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA09F226CFF8100E378DD /* 7x6-misc-font.ttf */; };
+		F7CBA0A2226CFF8100E378DD /* 7x6-misc-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA09F226CFF8100E378DD /* 7x6-misc-font.ttf */; };
+		F7CBA0A5226D016100E378DD /* Chicago_15.dfont in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0A4226D016100E378DD /* Chicago_15.dfont */; };
+		F7CBA0A6226D016100E378DD /* Chicago_15.dfont in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0A4226D016100E378DD /* Chicago_15.dfont */; };
+		F7CBA0A7226D016100E378DD /* Chicago_15.dfont in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0A4226D016100E378DD /* Chicago_15.dfont */; };
+		F7CBA0A9226D019200E378DD /* System_14.dfont in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0A8226D019200E378DD /* System_14.dfont */; };
+		F7CBA0AA226D019200E378DD /* System_14.dfont in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0A8226D019200E378DD /* System_14.dfont */; };
+		F7CBA0AB226D019200E378DD /* System_14.dfont in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0A8226D019200E378DD /* System_14.dfont */; };
+		F7CBA0AD226D01AF00E378DD /* PxPlus_IBM_BIOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0AC226D01AE00E378DD /* PxPlus_IBM_BIOS.ttf */; };
+		F7CBA0AE226D01AF00E378DD /* PxPlus_IBM_BIOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0AC226D01AE00E378DD /* PxPlus_IBM_BIOS.ttf */; };
+		F7CBA0AF226D01AF00E378DD /* PxPlus_IBM_BIOS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0AC226D01AE00E378DD /* PxPlus_IBM_BIOS.ttf */; };
+		F7CBA0B1226D04DF00E378DD /* Evason-applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0B0226D04DF00E378DD /* Evason-applogo.png */; };
+		F7CBA0B2226D04DF00E378DD /* Evason-applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0B0226D04DF00E378DD /* Evason-applogo.png */; };
+		F7CBA0B3226D04DF00E378DD /* Evason-applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0B0226D04DF00E378DD /* Evason-applogo.png */; };
+		F7CBA0B5226D06BE00E378DD /* OptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CBA0B4226D06BE00E378DD /* OptionController.swift */; };
+		F7CBA0B6226D06BE00E378DD /* OptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CBA0B4226D06BE00E378DD /* OptionController.swift */; };
+		F7CBA0B7226D06BE00E378DD /* OptionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CBA0B4226D06BE00E378DD /* OptionController.swift */; };
+		F7CBA0B9226D07E600E378DD /* options.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0B8226D07E600E378DD /* options.sks */; };
+		F7CBA0BA226D07E600E378DD /* options.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0B8226D07E600E378DD /* options.sks */; };
+		F7CBA0BB226D07E600E378DD /* options.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7CBA0B8226D07E600E378DD /* options.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +120,9 @@
 /* Begin PBXFileReference section */
 		F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitleMenu.sks; sourceTree = "<group>"; };
 		F7200D3721E2CF9100A5D496 /* shine.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = shine.atlas; sourceTree = SOURCE_ROOT; };
+		F73CF38C226EBD08004D6192 /* exason-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exason-64.png"; sourceTree = "<group>"; };
+		F73CF3902270038F004D6192 /* Tutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tutorial.sks; sourceTree = "<group>"; };
+		F73CF3942270050A004D6192 /* TileCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TileCenter.png; sourceTree = "<group>"; };
 		F748E86B21CD4C0F0099805E /* Evason.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evason.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F748E86E21CD4C0F0099805E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F748E87021CD4C0F0099805E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -126,6 +159,13 @@
 		F7A59A92226C48F20084B085 /* human.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = human.atlas; sourceTree = SOURCE_ROOT; };
 		F7CA84B921EA65E000A166DD /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleMenu.swift; sourceTree = "<group>"; };
+		F7CBA09F226CFF8100E378DD /* 7x6-misc-font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7x6-misc-font.ttf"; sourceTree = "<group>"; };
+		F7CBA0A4226D016100E378DD /* Chicago_15.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chicago_15.dfont; sourceTree = "<group>"; };
+		F7CBA0A8226D019200E378DD /* System_14.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = System_14.dfont; sourceTree = "<group>"; };
+		F7CBA0AC226D01AE00E378DD /* PxPlus_IBM_BIOS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PxPlus_IBM_BIOS.ttf; sourceTree = "<group>"; };
+		F7CBA0B0226D04DF00E378DD /* Evason-applogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Evason-applogo.png"; sourceTree = "<group>"; };
+		F7CBA0B4226D06BE00E378DD /* OptionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionController.swift; sourceTree = "<group>"; };
+		F7CBA0B8226D07E600E378DD /* options.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = options.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,22 +219,29 @@
 				F748E87221CD4C0F0099805E /* Actions.sks */,
 				F748E86E21CD4C0F0099805E /* AppDelegate.swift */,
 				F748E87821CD4C110099805E /* Assets.xcassets */,
+				F73CF3942270050A004D6192 /* TileCenter.png */,
+				F7CBA0B0226D04DF00E378DD /* Evason-applogo.png */,
 				F7A59A5C226C44E70084B085 /* 8x8-evason-font.ttf */,
+				F73CF38C226EBD08004D6192 /* exason-64.png */,
 				F7A59A58226C43DB0084B085 /* evason-1.png */,
 				F75A641621E29239002A180F /* EVASON BETA.png */,
 				F748E87E21CD4C110099805E /* Evason.entitlements */,
 				F7A59A67226C486F0084B085 /* humanflipold */,
 				F7A59A60226C486F0084B085 /* humanold */,
 				F748E87021CD4C0F0099805E /* GameScene.sks */,
+				F73CF3902270038F004D6192 /* Tutorial.sks */,
 				F7A59A92226C48F20084B085 /* human.atlas */,
 				F748E87421CD4C0F0099805E /* GameScene.swift */,
 				F75A642521E2B96A002A180F /* humanflip.atlas */,
 				F748E87D21CD4C110099805E /* Info.plist */,
+				F7CBA0A3226D00D400E378DD /* Fonts */,
 				F748E87A21CD4C110099805E /* Main.storyboard */,
 				F75A641421E28CA8002A180F /* pink box.png */,
 				F7200D3721E2CF9100A5D496 /* shine.atlas */,
 				F7CA84B921EA65E000A166DD /* SplashViewController.swift */,
 				F711DD2A21E6FD6800A6C1B2 /* TitleMenu.sks */,
+				F7CBA0B4226D06BE00E378DD /* OptionController.swift */,
+				F7CBA0B8226D07E600E378DD /* options.sks */,
 				F7CA84BB21EA67BF00A166DD /* TitleMenu.swift */,
 				F748E87621CD4C0F0099805E /* GameViewController.swift */,
 			);
@@ -244,6 +291,17 @@
 			);
 			path = humanflipold;
 			sourceTree = SOURCE_ROOT;
+		};
+		F7CBA0A3226D00D400E378DD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F7CBA0A4226D016100E378DD /* Chicago_15.dfont */,
+				F7CBA0AC226D01AE00E378DD /* PxPlus_IBM_BIOS.ttf */,
+				F7CBA0A8226D019200E378DD /* System_14.dfont */,
+				F7CBA09F226CFF8100E378DD /* 7x6-misc-font.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -359,20 +417,29 @@
 				F7A59A59226C43DB0084B085 /* evason-1.png in Resources */,
 				F7A59A77226C486F0084B085 /* human_2.png in Resources */,
 				F7A59A8C226C486F0084B085 /* humanflip_2.png in Resources */,
+				F7CBA0A5226D016100E378DD /* Chicago_15.dfont in Resources */,
 				F7A59A74226C486F0084B085 /* human_6.png in Resources */,
 				F7A59A86226C486F0084B085 /* humanflip_6.png in Resources */,
+				F73CF38D226EBD08004D6192 /* exason-64.png in Resources */,
 				F748E87321CD4C0F0099805E /* Actions.sks in Resources */,
+				F7CBA0B9226D07E600E378DD /* options.sks in Resources */,
+				F7CBA0AD226D01AF00E378DD /* PxPlus_IBM_BIOS.ttf in Resources */,
 				F7A59A6E226C486F0084B085 /* human_4.png in Resources */,
+				F7CBA0A0226CFF8100E378DD /* 7x6-misc-font.ttf in Resources */,
+				F7CBA0B1226D04DF00E378DD /* Evason-applogo.png in Resources */,
 				F7A59A89226C486F0084B085 /* humanflip_3.png in Resources */,
 				F748E87C21CD4C110099805E /* Main.storyboard in Resources */,
 				F7A59A80226C486F0084B085 /* humanflip_5.png in Resources */,
 				F75A641721E29239002A180F /* EVASON BETA.png in Resources */,
 				F7A59A7A226C486F0084B085 /* human_3.png in Resources */,
+				F7CBA0A9226D019200E378DD /* System_14.dfont in Resources */,
 				F7A59A83226C486F0084B085 /* humanflip_4.png in Resources */,
 				F711DD2B21E6FD6800A6C1B2 /* TitleMenu.sks in Resources */,
 				F7A59A8F226C486F0084B085 /* humanflip_1.png in Resources */,
 				F7A59A7D226C486F0084B085 /* human_1.png in Resources */,
+				F73CF3952270050A004D6192 /* TileCenter.png in Resources */,
 				F7A59A93226C48F20084B085 /* human.atlas in Resources */,
+				F73CF3912270038F004D6192 /* Tutorial.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,21 +447,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73CF3962270050A004D6192 /* TileCenter.png in Resources */,
 				F7A59A5E226C44E70084B085 /* 8x8-evason-font.ttf in Resources */,
+				F7CBA0A6226D016100E378DD /* Chicago_15.dfont in Resources */,
 				F7A59A5A226C43DB0084B085 /* evason-1.png in Resources */,
+				F7CBA0AA226D019200E378DD /* System_14.dfont in Resources */,
 				F7A59A8D226C486F0084B085 /* humanflip_2.png in Resources */,
+				F7CBA0BA226D07E600E378DD /* options.sks in Resources */,
 				F7A59A78226C486F0084B085 /* human_2.png in Resources */,
 				F7A59A90226C486F0084B085 /* humanflip_1.png in Resources */,
 				F7A59A87226C486F0084B085 /* humanflip_6.png in Resources */,
 				F7A59A8A226C486F0084B085 /* humanflip_3.png in Resources */,
 				F7A59A6F226C486F0084B085 /* human_4.png in Resources */,
+				F73CF38E226EBD08004D6192 /* exason-64.png in Resources */,
 				F7A59A94226C48F20084B085 /* human.atlas in Resources */,
 				F7A59A75226C486F0084B085 /* human_6.png in Resources */,
+				F7CBA0B2226D04DF00E378DD /* Evason-applogo.png in Resources */,
 				F7A59A72226C486F0084B085 /* human_5.png in Resources */,
 				F7A59A7B226C486F0084B085 /* human_3.png in Resources */,
 				F7A59A84226C486F0084B085 /* humanflip_4.png in Resources */,
 				F7A59A81226C486F0084B085 /* humanflip_5.png in Resources */,
+				F73CF3922270038F004D6192 /* Tutorial.sks in Resources */,
 				F7A59A7E226C486F0084B085 /* human_1.png in Resources */,
+				F7CBA0A1226CFF8100E378DD /* 7x6-misc-font.ttf in Resources */,
+				F7CBA0AE226D01AF00E378DD /* PxPlus_IBM_BIOS.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,21 +478,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73CF3972270050A004D6192 /* TileCenter.png in Resources */,
 				F7A59A5F226C44E70084B085 /* 8x8-evason-font.ttf in Resources */,
+				F7CBA0A7226D016100E378DD /* Chicago_15.dfont in Resources */,
 				F7A59A5B226C43DB0084B085 /* evason-1.png in Resources */,
+				F7CBA0AB226D019200E378DD /* System_14.dfont in Resources */,
 				F7A59A8E226C486F0084B085 /* humanflip_2.png in Resources */,
+				F7CBA0BB226D07E600E378DD /* options.sks in Resources */,
 				F7A59A79226C486F0084B085 /* human_2.png in Resources */,
 				F7A59A91226C486F0084B085 /* humanflip_1.png in Resources */,
 				F7A59A88226C486F0084B085 /* humanflip_6.png in Resources */,
 				F7A59A8B226C486F0084B085 /* humanflip_3.png in Resources */,
 				F7A59A70226C486F0084B085 /* human_4.png in Resources */,
+				F73CF38F226EBD08004D6192 /* exason-64.png in Resources */,
 				F7A59A95226C48F20084B085 /* human.atlas in Resources */,
 				F7A59A76226C486F0084B085 /* human_6.png in Resources */,
+				F7CBA0B3226D04DF00E378DD /* Evason-applogo.png in Resources */,
 				F7A59A73226C486F0084B085 /* human_5.png in Resources */,
 				F7A59A7C226C486F0084B085 /* human_3.png in Resources */,
 				F7A59A85226C486F0084B085 /* humanflip_4.png in Resources */,
 				F7A59A82226C486F0084B085 /* humanflip_5.png in Resources */,
+				F73CF3932270038F004D6192 /* Tutorial.sks in Resources */,
 				F7A59A7F226C486F0084B085 /* human_1.png in Resources */,
+				F7CBA0A2226CFF8100E378DD /* 7x6-misc-font.ttf in Resources */,
+				F7CBA0AF226D01AF00E378DD /* PxPlus_IBM_BIOS.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +516,7 @@
 				F748E87521CD4C0F0099805E /* GameScene.swift in Sources */,
 				F748E86F21CD4C0F0099805E /* AppDelegate.swift in Sources */,
 				F7CA84BA21EA65E000A166DD /* SplashViewController.swift in Sources */,
+				F7CBA0B5226D06BE00E378DD /* OptionController.swift in Sources */,
 				F7CA84BC21EA67BF00A166DD /* TitleMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CBA0B6226D06BE00E378DD /* OptionController.swift in Sources */,
 				F748E88821CD4C110099805E /* EvasonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CBA0B7226D06BE00E378DD /* OptionController.swift in Sources */,
 				F748E89321CD4C110099805E /* EvasonUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
